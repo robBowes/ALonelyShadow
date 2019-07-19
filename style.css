@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  background-color: black;
+}
+img {
+  width: auto;
+  height: 100%;
+  position: relative;
+}
+
+button {
+  position: absolute;
+  display: block;
+  opacity: 0.2;
+  z-index: 1;
+}
+
+section article {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 20vh;
+  background-color: black;
+  opacity: 0;
+  color: whitesmoke;
+  transition: opacity 1000ms ease;
+  pointer-events: none;
+  font-family: "Merriweather", serif;
+  font-size: 1.5em;
+  padding: 1em;
+  border-radius: 7px;
+  z-index: 2;
+  outline: none;
+  box-shadow: 5px 5px 0px black;
+  border-radius: 4px;
+}
+
+section.one button {
+  bottom: 8vh;
+  left: 0;
+  height: 12vh;
+  width: 12vw;
+}
+
+section.two button {
+  top: 34vh;
+  left: 40vw;
+  height: 7vh;
+  width: 7vw;
+}
+
+section.three button {
+  top: 20vh;
+  left: 20vw;
+  height: 7vh;
+  width: 7vw;
+}
+
+section.four button {
+  top: 80vh;
+  left: 20vw;
+  height: 7vh;
+  width: 7vw;
+}
+
+section.five button {
+  top: 60vh;
+  left: 30vw;
+  height: 7vh;
+  width: 7vw;
+}
+
+section.six button {
+  top: 10vh;
+  left: 20vw;
+  height: 7vh;
+  width: 7vw;
+}
+
+section.seven button {
+  top: 10vh;
+  left: 90vw;
+  height: 7vh;
+  width: 7vw;
+}
+
+section.eight button {
+  top: 70vh;
+  left: 70vw;
+  height: 7vh;
+  width: 7vw;
+}

@@ -1,0 +1,11 @@
+{
+  "name": "shadows",
+  "version": "1.0.0",
+  "description": "Multimedia presentation",
+  "main": "index.js",
+  "author": "Robert Bowes <r.e.bowes@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "typescript": "^3.5.3"
+  }
+}
