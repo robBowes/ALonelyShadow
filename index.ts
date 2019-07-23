@@ -1,6 +1,8 @@
-onload = function() {
-  const sections: SectionList = getSections()
-  sections.forEach(addEventListeners)
+onload = () => document.querySelectorAll("section").forEach(addEventListeners)
+
+const addEventListeners = (element: HTMLElement) => {
+  element.children[0].addEventListener("click", makeVisible)
+  element.children[1].addEventListener("click", makeInvisible)
 }
 
 const makeVisible: EventListener = (event) => {
@@ -16,10 +18,3 @@ const makeInvisible = (event: Event) => {
   src.style.opacity = "0"
   src.style.pointerEvents = "none"
 }
-
-const addEventListeners = (element: HTMLElement) => {
-  element.children[0].addEventListener("click", makeVisible)
-  element.children[1].addEventListener("click", makeInvisible)
-}
-
-const getSections = () => Array.from(document.querySelectorAll("section"))
